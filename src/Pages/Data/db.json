@@ -1,0 +1,37 @@
+{
+  "dosen": [
+    {
+      "id": 1,
+      "nama": "arya",
+      "nim": "Dosen.1929.0001",
+      "matkul": "gamedev"
+    },
+    {
+      "id": 2,
+      "nama": "ardi",
+      "nim": "Dosen.1930.0002",
+      "matkul" : "Pemsik"
+    }
+  ],
+  "mahasiswa": [
+    {
+      "id": 1,
+      "nama": "Andi",
+      "nim": "A11.2020.00001"
+    },
+    {
+      "id": 2,
+      "nama": "Budi",
+      "nim": "A11.2020.00002"
+    }
+
+  ],
+    "matakuliah": [
+    {
+      "id": 1,
+      "nama": "Pemsik",
+      "kode": "MK101"
+    }
+  ]
+
+}

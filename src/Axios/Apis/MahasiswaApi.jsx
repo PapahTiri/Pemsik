@@ -1,0 +1,19 @@
+import axios from "../../Pages/Utils/AxiosInstance";
+
+// Ambil semua data mahasiswa
+export const getAllMahasiswa = () => axios.get('/mahasiswa');
+
+export const getAllMahasiswaPagination = (params = {}) =>
+    axios.get("/mahasiswa", { params });
+
+// Ambil satu mahasiswa
+export const getMahasiswa = (id) => axios.get(`/mahasiswa/${id}`);
+
+// Tambah mahasiswa
+export const storeMahasiswa = (data) => axios.post('/mahasiswa', data);
+
+// Update mahasiswa
+export const updateMahasiswa = (id, data) => axios.put(`/mahasiswa/${id}`, data);
+
+// Hapus mahasiswa
+export const deleteMahasiswa = (id) => axios.delete(`/mahasiswa/${id}`);
