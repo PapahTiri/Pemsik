@@ -5,13 +5,13 @@ import tailwindcss from '@tailwindcss/vite'
 
 // https://vite.dev/config/
 export default defineConfig({
+  base: '/Pemsik/',
   plugins: [
     react({
       jsxRuntime: 'automatic'
     }),
     tailwindcss(),
   ],
-  base: '/Pemsik/',
   resolve: {
     alias: {
       // '@': path.resolve(__dirname, './src')

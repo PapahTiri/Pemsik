@@ -98,13 +98,14 @@ const router = createBrowserRouter([
     ],
   },
   {
-    basename: "/Pemsik",
-  },
-  {
     path: "*",
     element: <PageNotFound />,
   },
-]);
+],
+  {
+    basename: "/Pemsik",
+  },
+);
 const queryClient = new QueryClient();
 createRoot(document.getElementById("root")).render(
   <StrictMode>
