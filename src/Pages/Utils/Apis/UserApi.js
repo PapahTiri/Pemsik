@@ -1,6 +1,6 @@
-import axios from "axios";
-const API = "http://localhost:3001/user";
+import AxiosInstance from "../AxiosInstance";
+const API = "/user";
 
-export const registerUser = (data) => axios.post(API, data);
-export const getAllUsers = () => axios.get(API);
-export const updateUser = (id, data) => axios.patch(`${API}/${id}`, data);
+export const registerUser = (data) => AxiosInstance.post(API, data);
+export const getAllUsers = () => AxiosInstance.get(API);
+export const updateUser = (id, data) => AxiosInstance.put(`${API}/${id}`, data);

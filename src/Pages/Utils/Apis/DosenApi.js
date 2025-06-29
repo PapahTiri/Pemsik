@@ -1,20 +1,20 @@
-import axios from "axios";
-const API = "http://localhost:3001/dosen";
+import AxiosInstance from "../AxiosInstance";
+const API = "/dosen";
 
 // GET semua dosen
-export const getAllDosen = () => axios.get(API);
+export const getAllDosen = () => AxiosInstance.get(API);
 
 export const getDosenPagination = (params = {}) =>
-    axios.get("http://localhost:3001/dosen", { params });
+    AxiosInstance.get(API, { params });
 
 // Ambil 1 dosen
-export const getDosen = (id) => axios.get(`${API}/${id}`);
+export const getDosen = (id) => AxiosInstance.get(`${API}/${id}`);
 
 // Tambah dosen baru
-export const storeDosen = (data) => axios.post(API, data);
+export const storeDosen = (data) => AxiosInstance.post(API, data);
 
 // Update dosen
-export const updateDosen = (id, data) => axios.put(`${API}/${id}`, data);
+export const updateDosen = (id, data) => AxiosInstance.put(`${API}/${id}`, data);
 
 // Hapus dosen
-export const deleteDosen = (id) => axios.delete(`${API}/${id}`);
+export const deleteDosen = (id) => AxiosInstance.delete(`${API}/${id}`);
